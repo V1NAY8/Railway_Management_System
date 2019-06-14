@@ -1,0 +1,817 @@
+body{
+    margin: 0;
+    background-color: #eaeaea;
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    background-image: url(./train.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#nav {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    margin-top: 7px;
+    margin-left: 4px;
+}
+
+#logo_text {
+    position: absolute;
+    display: inline;
+    top: 1px;
+    left: 65px;
+    font-size: 22px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #ff5a5f;
+    font-weight: bold;
+}
+
+#host_link {
+    display: inline;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    float: right;
+    margin-top: 11px;
+    border: 2px solid #c4c4c4;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#host_link:visited {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+#host_link:hover {
+    border: 2px solid gray;
+}
+
+.nav_links {
+    display: inline;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    float: right;
+    margin: 12px;
+    margin-top: 11px;
+    padding: 8px;
+}
+
+#welcome_text_div {
+    background-color: rgba;
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    top: 20%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -400px;
+}
+
+#welcome_text {
+    color: #141823;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 55px;
+    text-align: center;
+}
+
+#welcome_under_text {
+    color: #292f33;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -50px;
+}
+
+#how_it_works:link {
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    border: 1p solid black;
+    padding: 10px 30px 10px 30px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+}
+
+#how_it_works:visited {
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+#how_it_works:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#searchbar_div {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+}
+
+#searchbar {
+    position: absolute;
+    width: 800px;
+    height: 45px;
+    background-color: white;
+    top: 50%;
+    margin-top: -22.5px;
+    left: 50%;
+    margin-left: -400px;
+    border-radius: 3px;
+}
+
+#where_div {
+    position: absolute;
+    width: 400px;
+    height: 45px;
+    border-right: 1px solid lightgray; 
+}
+
+#where_text {
+    color: lightgray;
+    font-family: sans-serif;
+    margin-left: 15px;
+}
+
+#check_in_div {
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    border-right: 1px solid lightgray;
+    left: 400px;
+}
+
+#check_in_text {
+    font-family: sans-serif;
+    color: gray;
+    margin-left: 15px;
+}
+
+#check_out_div {
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    border-right: 1px solid lightgray;
+    left: 510px;
+}
+
+#check_out_text {
+    font-family: sans-serif;
+    color: gray;
+    margin-left: 15px;
+}
+
+#guest_div {
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    border-right: 1px solid lightgray;
+    left: 620px;
+}
+
+#guest_text {
+    font-family: sans-serif;
+    color: gray;
+    margin-left: 15px;
+}
+
+#search_button_div {
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    left: 730px;        
+}
+
+#search_button:link {
+    position: absolute;
+    font-family: sans-serif;
+    background-color: #ff3655;
+    color: white;
+    text-decoration: none;
+    padding: 12.5px 30px 12.5px 30px;
+    border-radius: 3px;
+}
+
+#search_button:visited {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#search_button:hover {
+    background-color: #ff5b74;
+}
+
+#hosting_opportunity_div {
+    position: relative;
+    width: 950px;
+    height: 300px;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#hosting_opportunity_div_1 {
+    position: absolute;
+    width: 330px;
+    height: 100%;
+}
+
+#hosting_opportunity_div_2 {
+    position: absolute;
+    width: 620px;
+    height: 100%;
+    background-image: url(https://s5.postimg.cc/yo6cspybb/family.jpg);
+    background-size: cover;
+    right: 0;
+}
+
+#hosting_opportunity_text {
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #545454;
+    font-size: 22px;
+    left: 50%;
+    margin-left: -110px;
+    top: 30px;
+}
+
+#earn_money_text {
+    position: absolute;
+    font-family: sans-serif;
+    color: #545454;
+    text-align: center;
+    left: 50%;
+    margin-left: -110px;
+    top: 120px;
+}
+
+#what_earn_link:link {
+    position: absolute;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    background-color: #25898b;
+    padding: 15px 30px 15px 30px;
+    text-decoration: none;
+    border-radius: 2px;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -120px;
+    box-shadow: 0px 1px black;
+}
+
+#what_earn_link:visited {
+    color: white;
+}
+
+#what_earn_link:hover {
+    background-color: #17acb0;
+}
+
+#what_earn_link:active {
+    background-color: #256a6b;
+}
+
+#just_for_the_weekend_text {
+    color: #545454;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#discover_text {
+    font-family: sans-serif;
+    color: #545454;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+#kuta_ubud_kualalumpur_div {
+    position: relative;
+    width: 950px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+
+#kuta_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url(https://s5.postimg.cc/tw14v0t13/kuta.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#ubud_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url(https://s5.postimg.cc/48518c25z/ubud.jpg);
+    background-size: cover;
+    background-position: center;
+    left: 325px;
+}
+
+#kualalumpur_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url(https://s5.postimg.cc/4byuol7nb/kualalumpur.jpg);
+    background-size: cover;
+    background-position: center;
+    left: 650px;
+}
+
+#all_destinations_div {
+     position: relative;
+     height: 55px;
+     font-weight: bold;
+}
+
+#all_destinations_text:link {
+    font-family: sans-serif;
+    color: #484848;
+    text-decoration: none;
+    border: 1px solid #c4c4c4;
+    padding: 10px 80px 10px 80px;
+    border-radius: 2px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -158.5px;
+}
+
+#all_destinations_text:visited {
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+#all_destinations_text:hover {
+    border: 1px solid gray;
+}
+
+
+#explore_the_world_text {
+    color: #545454;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#people_traveling_text {
+    font-family: sans-serif;
+    color: #545454;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+#newyork_william_div {
+    position: relative;
+    width: 950px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+
+#newyork_div {
+    position: absolute;
+    width: 625px;
+    height: 100%;
+    background-image: url(https://s5.postimg.cc/etowkc8hj/taxi.jpg);
+    background-size: cover;
+    margin-right: 25px;
+}
+
+#newyork_link:link {
+    position: absolute;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 157.5px 233px 157.7px 233px;
+    top: 0;
+    font-size: 35px;
+}
+
+#newyork_link:visited {
+    color: white;
+}
+    
+#william_div {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-image: url(https://s5.postimg.cc/51d1n7it3/apart.jpg);
+    background-size: cover;
+    right: 0;
+}
+
+#william_profile_div {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
+    background-image: url(https://s5.postimg.cc/r4hv4euif/mendes.jpg);
+    background-size: cover;
+    left: 50%;
+    margin-left: -32.5px;
+    top: 100px;
+    border: 2px solid white;
+}
+
+#william_home_text {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 190px;
+}
+
+#william_city_text {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: -20px;
+}
+
+#william_home_price_div {
+    position: relative;
+    margin-top: 40px;
+    width: 80px;
+    height: 35px;
+    background-color: rgba(94, 94, 94, 0.8);
+}
+
+#william_home_price_text {
+    font-family: sans-serif;
+    color: white;
+    font-size: 27px;
+    text-align: center;
+}
+
+.small_dollar_sign {
+    position: absolute;
+    font-size: 15px;
+    top: 8px;
+    left: 8px;
+}
+
+#hawaii_paris_barcelona_div {
+    position: relative;
+    width: 950px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+
+#hawaii_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url(https://s5.postimg.cc/7t0wrk6pj/hawaiibeach.jpg);
+    background-size: cover;x
+    background-position: -100px;
+}
+
+#paris_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url(https://s5.postimg.cc/6lmyzcgl3/paris.jpg);
+    background-size: cover;
+    background-position: center;
+    left: 325px;
+}
+
+#barcelona_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url(https://s5.postimg.cc/tkf34in7b/barcelona.jpg);
+    background-size: cover;
+    background-position: center;
+    left: 650px;
+}
+
+#egypt_gaby_div {
+    position: relative;
+    width: 950px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+
+#gaby_div {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-image: url(https://s5.postimg.cc/jylio7w1j/apart2.jpg);
+    background-size: cover;
+    margin-right: 25px;
+}
+
+#gaby_profile_div {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
+    background-image: url(https://s5.postimg.cc/7euze7x87/gaby.jpg);
+    background-size: cover;
+    left: 50%;
+    margin-left: -32.5px;
+    top: 100px;
+    border: 2px solid white;
+}
+
+#gaby_home_text {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 190px;
+}
+
+#gaby_city_text {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: -20px;
+}
+
+#gaby_home_price_div {
+    position: relative;
+    margin-top: 40px;
+    width: 80px;
+    height: 35px;
+    background-color: rgba(94, 94, 94, 0.8);
+}
+
+#gaby_home_price_text {
+    font-family: sans-serif;
+    color: white;
+    font-size: 27px;
+    text-align: center;
+}
+
+#egypt_div {
+    position: absolute;
+    width: 625px;
+    height: 100%;
+    background-image: url(https://s5.postimg.cc/ionp9629j/egypt.jpg);
+    background-size: cover;
+    right: 0;
+}
+
+#egypt_link:link {
+    position: absolute;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 157.5px 233px 157.7px 233px;
+    top: 0;
+    font-size: 35px;
+}
+
+#egypt_link:visited {
+    color: white;
+}
+    
+#vienna_berlin_jakarta_div {
+    position: relative;
+    width: 950px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+
+#vienna_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url(https://s5.postimg.cc/lo3snrqif/vienna.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#berlin_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url(https://s5.postimg.cc/6wztyd7nb/berlin.jpg);
+    background-size: cover;
+    background-position: center;
+    left: 325px;
+}
+
+#jakarta_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url(https://s5.postimg.cc/lb7t3uiuv/jakarta.jpg);
+    background-size: cover;
+    background-position: center;
+    left: 650px;
+}
+
+.three_thumnail_text {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 27px;
+    margin-top: 130px;
+}
+
+#slidy-container {
+    position: relative;
+    width: 100%;
+    height: 550phx;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#slidy {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+  -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+}
+.row {
+  clear:both;
+  display: table;
+  content: "";
+}
+.col-2 {
+  width: 160px;
+  float:left;
+}
+.col-3 {
+  width: 240px;
+  float:left;
+}
+.offset-1 {
+  margin-left: 80px;
+}
+
+#footer {
+  background-image: url(https://a0.muscache.com/airbnb/static/footer/background-317dd7c2cb678ddbdb0a983d511cb9a0.png);
+  background-color: #2b2d2e;
+  color: #fff;
+  
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.top-footer {
+  padding: 50px 0;
+  border-bottom: 1px solid #555758;
+}
+
+select {
+  width: 240px;
+  height: 40px;
+  background-color: #565A5C;
+  font-family: sans-serif;
+  color: #fff;
+  padding-left: 10px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+ul{
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+h4 {
+  margin:0 0 15px;
+}
+h5 {
+  text-align: center;
+  font-size: 1.125em;
+  margin-bottom: 10px;
+}
+.list li {
+  font-size: 0.875em;
+  line-height: 1.25em;
+  letter-spacing: 0.75px;
+  padding: 2px 0;
+  cursor: default;
+}
+.list li:hover {
+  color: #D6D6D6;
+}
+.new:after {
+  content: " New";
+  color: #16D1C1;
+}
+.social {
+  text-align: center;
+}
+.social li{
+  display: inline-block;
+}
+.social a {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #474949;
+  margin: 0 5px;
+  color: #fff;
+  transition: all .2s ease; 
+
+}
+.social a:hover {
+    transform: scale(1.2);
+}
+.bottom-footer {
+   padding-bottom: 30px;
+}
+.bottom-footer p{
+  color: #82888A;
+  text-align: center;
+}
+
+.facebook {
+  background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/facebook-logo_nltwrb.svg) no-repeat 50% 50%;
+  background-size: 20px 20px;
+}
+.google {
+    background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/google-plus-logo_cmhowf.svg) no-repeat 50% 50%;
+  background-size: 20px 20px;
+}
+.pinterest {
+  background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/social_ixemm2.svg) no-repeat 50% 50%;
+  background-size: 20px 20px;
+}
+.youtube {
+  background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/social-1_jo1gvp.svg) no-repeat 50% 50%;
+  background-size: 20px 20px;
+}
+.instagram {
+  background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/instagram-social-network-logo-of-photo-camera_kensul.svg) no-repeat 50% 50%;
+  background-size: 20px 20px;
+}
+.linkedin {
+  background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/linkedin-logo_q0pudm.svg) no-repeat 50% 50%;
+  background-size: 20px 20px;
+}
