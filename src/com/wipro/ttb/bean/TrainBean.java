@@ -2,16 +2,19 @@ package com.wipro.ttb.bean;
 
 import java.util.Date;
 
-public class trainBean {
+public class TrainBean {
 	String trainNo;
 	String trainName;
 	String trainSrc;
 	String trainDest;
 	String subStations;
 	Date travelDay;
+	String availableDays;
 	int availableSeats;
 	int estimatedTimeTaken;
 	String fare;
+	
+	
 	public String getTrainNo() {
 		return trainNo;
 	}
@@ -47,6 +50,12 @@ public class trainBean {
 	}
 	public void setTravelDay(Date travelDay) {
 		this.travelDay = travelDay;
+	}
+	public String getAvailableDays() {
+		return availableDays;
+	}
+	public void setAvailableDays(String availableDays) {
+		this.availableDays = availableDays;
 	}
 	public int getAvailableSeats() {
 		return availableSeats;

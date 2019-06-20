@@ -1,0 +1,73 @@
+SQL> SELECT OBJECT_NAME FROM USER_OBJECTS WHERE OBJECT_TYPE ='TABLE';
+
+OBJECT_NAME                                                                     
+--------------------------------------------------------------------------------
+TTB01_TBL_BOOK                                                                  
+TTB01_TBL_CT                                                                    
+TTB01_TBL_DTB                                                                   
+TTB01_TBL_TDT                                                                   
+TTB01_TBL_TTB                                                                   
+
+SQL> DESC TTB01_TBL_BOOK;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ PNR                                       NOT NULL NUMBER(38)
+ USER_REF                                  NOT NULL VARCHAR2(20)
+ TRAIN_ID                                  NOT NULL NUMBER(38)
+ AGE                                       NOT NULL NUMBER(38)
+ SRC                                       NOT NULL VARCHAR2(30)
+ DEST                                      NOT NULL VARCHAR2(30)
+ BOOKING_DATE                              NOT NULL DATE
+ JOURNEY_DATE                              NOT NULL DATE
+ TICKET_STATUS                             NOT NULL VARCHAR2(30)
+ PASSENGER_NAME                                     VARCHAR2(30)
+
+SQL> DESC TTB01_TBL_CT;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CITY_ID                                   NOT NULL NUMBER(38)
+ CITY_NAME                                 NOT NULL VARCHAR2(20)
+
+SQL> DESC TTB01_TBL_DTB;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ TRAVEL_DATE                               NOT NULL DATE
+ AVAILABLE_DAY                             NOT NULL VARCHAR2(30)
+ TRAIN_ID                                  NOT NULL NUMBER(38)
+ AVAILABLE_SEATS                           NOT NULL NUMBER(38)
+ FARE                                      NOT NULL VARCHAR2(10)
+
+SQL> DESC TTB01_TBL_TDT;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ TRAIN_ID                                  NOT NULL NUMBER(38)
+ TRAIN_NO                                  NOT NULL VARCHAR2(10)
+ TRAIN_NAME                                NOT NULL VARCHAR2(25)
+ TRAIN_CITIES                              NOT NULL VARCHAR2(30)
+ TIME_TAKEN                                NOT NULL VARCHAR2(10)
+ TRAIN_SRC                                          NUMBER(38)
+ TRAIN_DEST                                         NUMBER(38)
+
+SQL> DESC TTB01_TBL_TTB;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ USER_REF                                  NOT NULL VARCHAR2(20)
+ FIRST_NAME                                NOT NULL VARCHAR2(20)
+ LAST_NAME                                 NOT NULL VARCHAR2(20)
+ DOB                                       NOT NULL DATE
+ GENDER                                    NOT NULL VARCHAR2(10)
+ EMAIL_ID                                  NOT NULL VARCHAR2(40)
+ PASSWORD                                  NOT NULL VARCHAR2(20)
+ SQ1                                       NOT NULL VARCHAR2(20)
+ SQ2                                       NOT NULL VARCHAR2(20)
+ ADDRESS                                   NOT NULL VARCHAR2(40)
+ CITY                                      NOT NULL VARCHAR2(20)
+ DISTRICT                                  NOT NULL VARCHAR2(20)
+ COUNTRY                                   NOT NULL VARCHAR2(20)
+ PIN_CODE                                  NOT NULL NUMBER(38)
+ STATE                                     NOT NULL VARCHAR2(20)
+ MOBILE_NUMBER                             NOT NULL VARCHAR2(10)
+ LOGIN_STATUS                              NOT NULL VARCHAR2(10)
+ ACCOUNT_STATUS                            NOT NULL VARCHAR2(10)
+
+SQL> SPOOL OFF

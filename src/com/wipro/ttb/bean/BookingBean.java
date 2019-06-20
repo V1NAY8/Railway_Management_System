@@ -1,29 +1,29 @@
 package com.wipro.ttb.bean;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class BookingBean {
 	
 	int PNR;
-	int countPassengers;
+	String passengerName;
 	int age;
+	String trainNo;
+	String trainName;
 	String src;
 	String dest;
+	String estimatedTimeTaken;
+	int countPassengers;
 	Date bookingDate;
 	Date journeyDate;
 	String ticketStatus;
 	String fare;
-	String trainNo;
-	String trainName;
-	String subStations;
-	String estimatedTimeTaken;
 	
 	
 	public int getPNR() {
 		return PNR;
 	}
 	public void setPNR(int pNR) {
-		PNR = pNR;
+		this.PNR = pNR;
 	}
 	public int getCountPassengers() {
 		return countPassengers;
@@ -36,6 +36,12 @@ public class BookingBean {
 	}
 	public void setAge(int age) {
 		this.age = age;
+	}
+	public String getPassengerName() {
+		return passengerName;
+	}
+	public void setPassengerName(String passengerName) {
+		this.passengerName = passengerName;
 	}
 	public String getSrc() {
 		return src;
@@ -84,12 +90,6 @@ public class BookingBean {
 	}
 	public void setTrainName(String trainName) {
 		this.trainName = trainName;
-	}
-	public String getSubStations() {
-		return subStations;
-	}
-	public void setSubStations(String subStations) {
-		this.subStations = subStations;
 	}
 	public String getEstimatedTimeTaken() {
 		return estimatedTimeTaken;

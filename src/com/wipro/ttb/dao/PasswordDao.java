@@ -26,7 +26,6 @@ public class PasswordDao {
 			while(rSet.next()) {
 				if(rSet.getInt("CNT") == 1) {
 					user_exists = user_exists + 1;
-					
 				}
 			}
 				
@@ -36,7 +35,4 @@ public class PasswordDao {
 		}
 		return user_exists;
 	}
-	
-	
-	
 }
