@@ -9,11 +9,9 @@ import com.wipro.ttb.utils.DBUtil;
 
 public class PasswordDao {
 
-	public PasswordDao() {
-		// TODO Auto-generated constructor stub
-	}
 
 	public int checkForgotUser(PasswordBean passwordBean) {
+		// Check if User Exists in Database.
 		
 		int user_exists = 0;
 		
@@ -31,17 +29,12 @@ public class PasswordDao {
 					
 				}
 			}
-			
-			
+				
 		} catch (Exception e) {
 			System.out.println("Check forgot User Class");
 			System.out.println(e);
 		}
-		
 		return user_exists;
-		
-		
-		
 	}
 	
 	

@@ -10,13 +10,11 @@ import java.sql.ResultSet;
 import com.wipro.ttb.bean.LoginBean;
 import com.wipro.ttb.utils.DBUtil;
 
-/**
- * @author PP20085076
- *
- */
 public class LoginDAO {
 
+	// Should Create HTTP Session in service.
 	public String queryUser(LoginBean loginBean) {
+		// Logging in User
 		// Flag = 0 => User Exists in database.
 		// Input a Login Bean and then query database.
 		// returns string which tells status.
@@ -49,6 +47,12 @@ public class LoginDAO {
 		}
 		
 		return "EXCEPTION";
+	}
+	
+	// Should Terminate that individual Session.
+	public void logout(LoginBean loginBean) {
+		// Logging out user.
+		// Update Flags in DB
 	}
 	
 }

@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     background-color: #eaeaea;
 }
@@ -7,7 +7,7 @@ body{
     position: relative;
     width: 100%;
     height: 1080px;
-    background-image: url(./train.jpg);
+    background-image: url(../res/train.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -144,7 +144,7 @@ body{
     position: absolute;
     width: 400px;
     height: 45px;
-    border-right: 1px solid lightgray; 
+    border-right: 1px solid lightgray;
 }
 
 #where_text {
@@ -199,7 +199,7 @@ body{
     position: absolute;
     width: 110px;
     height: 45px;
-    left: 730px;        
+    left: 730px;
 }
 
 #search_button:link {
@@ -354,9 +354,9 @@ body{
 }
 
 #all_destinations_div {
-     position: relative;
-     height: 55px;
-     font-weight: bold;
+    position: relative;
+    height: 55px;
+    font-weight: bold;
 }
 
 #all_destinations_text:link {
@@ -381,7 +381,6 @@ body{
 #all_destinations_text:hover {
     border: 1px solid gray;
 }
-
 
 #explore_the_world_text {
     color: #545454;
@@ -431,7 +430,7 @@ body{
 #newyork_link:visited {
     color: white;
 }
-    
+
 #william_div {
     position: absolute;
     width: 300px;
@@ -506,8 +505,8 @@ body{
     height: 350px;
     margin-right: 25px;
     background-image: url(https://s5.postimg.cc/7t0wrk6pj/hawaiibeach.jpg);
-    background-size: cover;x
-    background-position: -100px;
+    background-size: cover;
+    x background-position: -100px;
 }
 
 #paris_div {
@@ -616,7 +615,7 @@ body{
 #egypt_link:visited {
     color: white;
 }
-    
+
 #vienna_berlin_jakarta_div {
     position: relative;
     width: 950px;
@@ -682,136 +681,156 @@ body{
 }
 
 * {
-  -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 body {
-  padding: 0;
-  margin: 0;
-  font-size: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
 }
+
 .row {
-  clear:both;
-  display: table;
-  content: "";
+    clear: both;
+    display: table;
+    content: "";
 }
+
 .col-2 {
-  width: 160px;
-  float:left;
+    width: 160px;
+    float: left;
 }
+
 .col-3 {
-  width: 240px;
-  float:left;
+    width: 240px;
+    float: left;
 }
+
 .offset-1 {
-  margin-left: 80px;
+    margin-left: 80px;
 }
 
 #footer {
-  background-image: url(https://a0.muscache.com/airbnb/static/footer/background-317dd7c2cb678ddbdb0a983d511cb9a0.png);
-  background-color: #2b2d2e;
-  color: #fff;
-  
+    background-image: url(https://a0.muscache.com/airbnb/static/footer/background-317dd7c2cb678ddbdb0a983d511cb9a0.png);
+    background-color: #2b2d2e;
+    color: #fff;
 }
 
 .container {
-  width: 960px;
-  margin: 0 auto;
+    width: 960px;
+    margin: 0 auto;
 }
 
 .top-footer {
-  padding: 50px 0;
-  border-bottom: 1px solid #555758;
+    padding: 50px 0;
+    border-bottom: 1px solid #555758;
 }
 
 select {
-  width: 240px;
-  height: 40px;
-  background-color: #565A5C;
-  font-family: sans-serif;
-  color: #fff;
-  padding-left: 10px;
-  border: none;
-  border-radius: 3px;
-  margin-bottom: 10px;
+    width: 240px;
+    height: 40px;
+    background-color: #565A5C;
+    font-family: sans-serif;
+    color: #fff;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
 }
-ul{
-  margin: 0;
-  padding:0;
-  list-style: none;
-}
-h4 {
-  margin:0 0 15px;
-}
-h5 {
-  text-align: center;
-  font-size: 1.125em;
-  margin-bottom: 10px;
-}
-.list li {
-  font-size: 0.875em;
-  line-height: 1.25em;
-  letter-spacing: 0.75px;
-  padding: 2px 0;
-  cursor: default;
-}
-.list li:hover {
-  color: #D6D6D6;
-}
-.new:after {
-  content: " New";
-  color: #16D1C1;
-}
-.social {
-  text-align: center;
-}
-.social li{
-  display: inline-block;
-}
-.social a {
-  display: block;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  border: 1px solid #474949;
-  margin: 0 5px;
-  color: #fff;
-  transition: all .2s ease; 
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
+
+h4 {
+    margin: 0 0 15px;
+}
+
+h5 {
+    text-align: center;
+    font-size: 1.125em;
+    margin-bottom: 10px;
+}
+
+.list li {
+    font-size: 0.875em;
+    line-height: 1.25em;
+    letter-spacing: 0.75px;
+    padding: 2px 0;
+    cursor: default;
+}
+
+.list li:hover {
+    color: #D6D6D6;
+}
+
+.new:after {
+    content: " New";
+    color: #16D1C1;
+}
+
+.social {
+    text-align: center;
+}
+
+.social li {
+    display: inline-block;
+}
+
+.social a {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #474949;
+    margin: 0 5px;
+    color: #fff;
+    transition: all .2s ease;
+}
+
 .social a:hover {
     transform: scale(1.2);
 }
+
 .bottom-footer {
-   padding-bottom: 30px;
+    padding-bottom: 30px;
 }
-.bottom-footer p{
-  color: #82888A;
-  text-align: center;
+
+.bottom-footer p {
+    color: #82888A;
+    text-align: center;
 }
 
 .facebook {
-  background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/facebook-logo_nltwrb.svg) no-repeat 50% 50%;
-  background-size: 20px 20px;
+    background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/facebook-logo_nltwrb.svg) no-repeat 50% 50%;
+    background-size: 20px 20px;
 }
+
 .google {
     background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/google-plus-logo_cmhowf.svg) no-repeat 50% 50%;
-  background-size: 20px 20px;
+    background-size: 20px 20px;
 }
+
 .pinterest {
-  background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/social_ixemm2.svg) no-repeat 50% 50%;
-  background-size: 20px 20px;
+    background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/social_ixemm2.svg) no-repeat 50% 50%;
+    background-size: 20px 20px;
 }
+
 .youtube {
-  background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/social-1_jo1gvp.svg) no-repeat 50% 50%;
-  background-size: 20px 20px;
+    background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/social-1_jo1gvp.svg) no-repeat 50% 50%;
+    background-size: 20px 20px;
 }
+
 .instagram {
-  background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/instagram-social-network-logo-of-photo-camera_kensul.svg) no-repeat 50% 50%;
-  background-size: 20px 20px;
+    background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/instagram-social-network-logo-of-photo-camera_kensul.svg) no-repeat 50% 50%;
+    background-size: 20px 20px;
 }
+
 .linkedin {
-  background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/linkedin-logo_q0pudm.svg) no-repeat 50% 50%;
-  background-size: 20px 20px;
+    background: url(https://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/linkedin-logo_q0pudm.svg) no-repeat 50% 50%;
+    background-size: 20px 20px;
 }

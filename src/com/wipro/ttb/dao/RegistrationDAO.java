@@ -6,18 +6,12 @@ package com.wipro.ttb.dao;
 import java.sql.*;
 import com.wipro.ttb.utils.*;
 import com.wipro.ttb.bean.*;
-/**
- * @author PP20085076
- *
- */
+
 public class RegistrationDAO {
 
-	/**
-	 * 
-	 */
-	
+
 	public int insertEmployee(RegistrationBean registrationBean){
-		// TODO Auto-generated constructor stub
+		// Inserts new Person into Database.
 		int count = 0;
 		try {
 			Connection connection  = DBUtil.getDBConnection();
@@ -46,9 +40,6 @@ public class RegistrationDAO {
 			int rowsAffected  = preparedStatement.executeUpdate();
 			System.out.println(rowsAffected + " Rows Added");
 			
-			
-			
-			
 		}
 		catch (Exception e) {
 			System.out.println(e);
@@ -56,5 +47,16 @@ public class RegistrationDAO {
 		}
 		return count;
 	}
+	
+	public void deleteEmployee(LoginBean loginBean) {
+		// Authenticate Login and Hence delete that person login from DB
+		// Or make that person Disabled.
+		
+	}
+	
+	public void updateProfile(RegistrationBean registrationBean) {
+		// Used to Update Profile in DB.
+	}
+
 
 }

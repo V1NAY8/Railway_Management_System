@@ -6,7 +6,7 @@ import com.wipro.ttb.dao.PasswordDao;
 public class PasswordService {
 
 	public PasswordService() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public String checkUser(PasswordBean passwordBean) {
