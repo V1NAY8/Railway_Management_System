@@ -1,16 +1,15 @@
-/**
- * 
- */
 package com.wipro.ttb.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-
 import com.wipro.ttb.bean.LoginBean;
 import com.wipro.ttb.utils.DBUtil;
 
 public class LoginDAO {
+	public LoginDAO() {
+		super();
+	}
 
 	// Should Create HTTP Session in service.
 	public String queryUser(LoginBean loginBean) {
@@ -25,34 +24,32 @@ public class LoginDAO {
 			String query = "Select COUNT(*) AS CNT from TTB01_TBL_TTB Where USER_REF = ? and PASSWORD = ?";
 			PreparedStatement preparedStatement = con.prepareStatement(query);
 			preparedStatement.setString(1, loginBean.getUserName());
-			preparedStatement.setString(2,loginBean.getPassword());
-			
+			preparedStatement.setString(2, loginBean.getPassword());
+
 			ResultSet rs = preparedStatement.executeQuery();
-			while(rs.next()) {
-			returned_rows = rs.getInt("CNT");
-			if(returned_rows >0) {
-				return "USER_AVAILABLE";
+			while (rs.next()) {
+				returned_rows = rs.getInt("CNT");
+				if (returned_rows > 0) {
+					return "USER_AVAILABLE";
+				} else {
+					return "NOT AVAILABLE";
+				}
 			}
-			else {
-				return "NOT AVAILABLE";
-			}
-			}
-			
-		}
-		catch (Exception e) {
+
+		} catch (Exception e) {
 			System.out.println("Login DAO");
 			System.out.println(e);
 			System.out.println(e.getStackTrace());
 			flag = flag + 1;
 		}
-		
+
 		return "EXCEPTION";
 	}
-	
+
 	// Should Terminate that individual Session.
 	public void logout(LoginBean loginBean) {
 		// Logging out user.
 		// Update Flags in DB
 	}
-	
+
 }

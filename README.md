@@ -1,16 +1,17 @@
 # Railway Management System
+
 ---
 
 Website using JSP, Servlets and Java
 
-Code Editor: Eclipse. 
+Code Editor: Eclipse.
 
 Testing: JUNIT
 
 Style: With BootStrap.
 
- ## Features to be Implemented
-  
+## Features to be Implemented
+
 - [ ] Login into Application
 - [ ] Logout from Application
 - [ ] Change my Password

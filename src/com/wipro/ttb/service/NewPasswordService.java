@@ -7,27 +7,27 @@ import com.wipro.ttb.dao.NewPasswordDAO;
 public class NewPasswordService {
 
 	public NewPasswordService() {
-		// TODO Auto-generated constructor stub
+		super();
 	}
+
 	public String queryIntoDB(NewPasswordBean newpasswordBean) {
 		// Gets data from controller in form of Bean.
 		// Queries DAO and gets result.
 		// Returns object.
 		String status;
-		
+
 		NewPasswordDAO newPasswordDAO = new NewPasswordDAO();
 		status = newPasswordDAO.queryUser1(newpasswordBean);
-		
+
 		System.out.println(status);
-		if(status.equals("USER_AVAILABLE")) {
+		if (status.equals("USER_AVAILABLE")) {
 			return "USER_AVAILABLE";
-			
-		}
-		else if (status.equals("NOT_AVAILABLE")) {
+
+		} else if (status.equals("NOT_AVAILABLE")) {
 			return "NOT_AVAILABLE";
-			
+
 		}
 		return "EXCEPTION";
-}
+	}
 
 }
