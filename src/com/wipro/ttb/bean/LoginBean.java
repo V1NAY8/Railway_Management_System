@@ -5,6 +5,7 @@ public class LoginBean {
 	public LoginBean() {
 		// TODO Auto-generated constructor stub
 	}
+	
 	private String userName;
 	private String password;
 	
@@ -15,7 +16,7 @@ public class LoginBean {
 		return password;
 	}
 	public void setUserName(String userName) {
-		this.userName = userName;
+		this.userName = userName.toUpperCase();
 	}
 	public void setPassword(String password) {
 		this.password = password;

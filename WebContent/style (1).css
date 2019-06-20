@@ -1,0 +1,133 @@
+body
+{
+ margin: 0;
+padding: 0;
+background: url(res/railway3.jpg);
+background-size: cover;
+font-family: sans-serif;
+}
+.title
+{
+text-align: center;
+padding: 50px 0 20px;
+}
+.title h1
+{
+margin: 0;
+padding: 0;
+color: #33CEFF;
+text-transform: uppercase;
+font-size: 36px;
+}
+.container
+{
+width: 60%;
+height: 500px;
+background: #fff;
+margin: 0 auto;
+border: 2px solid #fff;
+box-shadow: 0 15px 40px rgba(0,0,0,.5);
+}
+.container .left
+{
+float: left;
+width: 50%;
+height: 500px;
+background: url(railway3.jpg);
+background-size: cover;
+box-sizing: border-box;
+}
+.container .right
+{
+float: right;
+width: 50%;
+height: 400px;
+box-sizing: border-box;
+}
+.formBox
+{
+width: 100%;
+padding: 20px 40px;
+box-sizing: border-box;
+height: 400px;
+background: #fff;
+}
+.formBox p
+{
+margin: 0;
+padding: 0;
+font-weight: bold;
+color: #a6af13;
+}
+.formBox input
+{
+width: 100%;
+margin-bottom: 20px;
+}
+.formBox input[type="text"],
+ .formBox input[type="password"]
+{
+border: none;
+border-bottom: 2px solid #a6af13;
+outline: none;
+height: 40px;
+}
+.formBox input[type="text"]:focus,
+ .formBox input[type="password"]:focus
+{
+border-bottom: 2px solid #262626;
+}
+.formBox input[type="submit"]
+{
+border: none;
+outline: none;
+height: 40px;
+color: #fff;
+background: #262626;
+cursor: pointer;
+}
+.formBox input[type="submit"]:hover
+{
+background: #a6af13;
+}
+.formBox a
+{
+color: #262626;
+font-size: 12px;
+font-weight: bold;
+}
+
+
+
+.capbox {
+	background-color: #92D433;
+	border: #B3E272 0px solid;
+	border-width: 0px 12px 0px 0px;
+	display: inline-block;
+	*display: inline; zoom: 1; /* FOR IE7-8 */
+	padding: 8px 40px 8px 8px;
+	}
+
+.capbox-inner {
+	font: bold 11px arial, sans-serif;
+	color: #000000;
+	background-color: #DBF3BA;
+	margin: 5px auto 0px auto;
+	padding: 3px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	}
+
+#CaptchaDiv {
+	font: bold 17px verdana, arial, sans-serif;
+	font-style: italic;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	}
+
+#CaptchaInput { margin: 1px 0px 1px 0px; width: 135px; }@charset "ISO-8859-1";

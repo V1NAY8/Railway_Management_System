@@ -2,6 +2,9 @@
  * 
  */
 package com.wipro.ttb.bean;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.sql.Date;
 
 /**
  * @author PP20085076
@@ -17,8 +20,9 @@ public class RegistrationBean {
 	private String lastName;
 	private String gender;
 	private String dob;
+	private Date date;
 	private String emailID;
-	private int phone;
+	private String phone;
 	private String address;	
 	private String city;
 	private String district;
@@ -37,7 +41,7 @@ public class RegistrationBean {
 	}
 	
 	public void setUserID() {
-		String userID = this.firstName.substring(0,1).toUpperCase() + this.lastName.substring(0, 1).toUpperCase() + String.valueOf(this.phone).substring(6, 9);
+		String userID = this.firstName.substring(0,2).toUpperCase() + this.lastName.substring(0, 2).toUpperCase() + String.valueOf(this.phone).substring(6, 10);
 		System.out.println(userID);
 		this.userID = userID;
 	}
@@ -51,13 +55,18 @@ public class RegistrationBean {
 	public String getGender() {
 		return gender;
 	}
-	public String getDob() {
-		return dob;
+	public Date getDob() {
+		System.out.println("Input date " + dob);
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		LocalDate date1 = LocalDate.parse(dob, formatter);
+		date = Date.valueOf(date1);
+		System.out.println("Date of Birth" + date);
+		return date;
 	}
 	public String getEmailID() {
 		return emailID;
 	}
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 	public String getAddress() {
@@ -103,7 +112,7 @@ public class RegistrationBean {
 	public void setEmailID(String emailID) {
 		this.emailID = emailID;
 	}
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 	public void setAddress(String address) {

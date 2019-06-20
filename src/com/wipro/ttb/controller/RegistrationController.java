@@ -2,6 +2,7 @@ package com.wipro.ttb.controller;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -33,7 +34,8 @@ public class RegistrationController extends HttpServlet {
 		  String gender = request.getParameter("gender");
 		  String dob = request.getParameter("dob");
 		  String emailID = request.getParameter("email");
-		  int phone = Integer.parseInt(request.getParameter("mobile"));
+		  System.out.println(request.getParameter("mobile"));
+		  String phone = request.getParameter("mobile");
 		  String address = request.getParameter("address");	
 		  String city = request.getParameter("city");
 		  String district = request.getParameter("district");
@@ -67,11 +69,14 @@ public class RegistrationController extends HttpServlet {
 		  // Call Registration service
 		  RegistrationService registrationService = new RegistrationService();
 		  String status = registrationService.insertIntoDB(regBean);
+		  String name=firstName.substring(0,2).toUpperCase() + lastName.substring(0, 2).toUpperCase() + String.valueOf(phone).substring(6, 10);
+		  request.setAttribute("name",name);
+		  RequestDispatcher dispatcher = request.getRequestDispatcher("WelcomePage.jsp");
+		  dispatcher.forward(request,response);
+		 // request.getRequestDispatcher("WelcomePage.jsp").forward(request, response);
 		  System.out.println("Status is " + status);
-		  
-		  
-		
-		
+		 
+		  	
 		
 	}
 

@@ -27,7 +27,7 @@ public class RegistrationDAO {
 			preparedStatement.setString(1, registrationBean.getUserID());
 			preparedStatement.setString(2,registrationBean.getFirstName());
 			preparedStatement.setString(3,registrationBean.getLastName());
-			preparedStatement.setString(4,registrationBean.getDob());
+			preparedStatement.setDate(4,registrationBean.getDob());
 			preparedStatement.setString(5,registrationBean.getGender());
 			preparedStatement.setString(6,registrationBean.getEmailID());
 			preparedStatement.setString(7,registrationBean.getPassword());
@@ -39,16 +39,20 @@ public class RegistrationDAO {
 			preparedStatement.setString(13,registrationBean.getCountry());
 			preparedStatement.setInt(14,registrationBean.getPinCode());
 			preparedStatement.setString(15,registrationBean.getState());
-			preparedStatement.setInt(16,registrationBean.getPhone());
+			preparedStatement.setString(16,registrationBean.getPhone());
 			preparedStatement.setString(17,registrationBean.getLogin_status());
 			preparedStatement.setString(18,registrationBean.getAccount_status());
+			
+			int rowsAffected  = preparedStatement.executeUpdate();
+			System.out.println(rowsAffected + " Rows Added");
+			
 			
 			
 			
 		}
 		catch (Exception e) {
 			System.out.println(e);
-			count = count++;
+			count = count + 1;
 		}
 		return count;
 	}

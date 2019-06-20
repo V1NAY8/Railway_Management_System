@@ -27,7 +27,10 @@ public class RegistrationService {
 		int count = dao.insertEmployee(regBean);
 		
 		 if(count != 1)
+		 {
 			   status = "Success";
+			   
+		 }
 		   else
 			   status = "Fail";
 		

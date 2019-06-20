@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +5,22 @@
 <meta charset="ISO-8859-1">
 <title>Registration</title>
 <style>
+body
+{
+ margin: 0;
+padding: 0;
+background: url(res/background2.jpg) ;
+background-size: cover;
+font-family: sans-serif;
+
+}
+header {
+  			background-color: #AED6F1   ;
+ 			padding: 30px;
+  			text-align: Right;
+  			font-size: 40px;
+  			color: red;
+			}
 #search{
 width: 7em; height: 2em;}
 #g-recaptcha-response {
@@ -50,12 +65,16 @@ width: 7em; height: 2em;}
 
 #CaptchaInput { margin: 1px 0px 1px 0px; width: 135px; }
 
+
 </style>
 </head>
-<body bgcolor="#E6E6FA">
-<marquee><font size="6" color="tomato"><b><i>WELCOME TO INDIAN RAILWAYS. REGISTER TO START YOUR BOOKING</i></b></font></marquee>
+
+
+
+}
+<header><marquee><font size="6" color="white"bgcolor="dodgerblue"><b><i>WELCOME TO INDIAN RAILWAYS. REGISTER TO START YOUR BOOKING</i></b></font></marquee></header>
 <form name="form" method="post" action="RegistrationController" onsubmit="return validateform(this);">
-<b><i><p align="center"><font size="5" color="red">Personal Information</font></p></i></b>
+<b><i><p align="center"><font size="5" color="blue">Personal Information</font></p></i></b>
 <table cellspacing="15">
 <col width="130">
 	<tr>
@@ -101,7 +120,7 @@ width: 7em; height: 2em;}
   		</td>
   	</tr>
   	</table>
-  	<b><i><p align="center"><font size="5" color="red">Address Information</font></p></i></b>
+  	<b><i><p align="center"><font size="5" color="blue">Address Information</font></p></i></b>
  <table cellspacing="15">
  <col width="130">
 	
@@ -139,16 +158,9 @@ width: 7em; height: 2em;}
   		</td>
   	</tr>
   	</table>
-  	<b><i><p align="center"><font size="5" color="red">Login Information</font></p></i></b>
+  	<b><i><p align="center"><font size="5" color="blue">Login Information</font></p></i></b>
   	<table cellspacing="15">
   	<col width="130">
-  	
-  	<tr>
-  		<td ><b>UserName</b></td>
-  		<td >
-  			<input  type="text" PlaceHolder="UserName"	name="userName" > 
-  		</td>
-  	</tr>
   	<tr>
   		<td ><b>Password </b></td>
   		<td >
@@ -163,7 +175,7 @@ width: 7em; height: 2em;}
   		</td>
   	</tr>
   	</table>
-  	<b><i><p align="center"><font size="5" color="red">Security Information</font></p></i></b>
+  	<b><i><p align="center"><font size="5" color="blue">Security Information</font></p></i></b>
   	<table cellspacing="15"><col width="200">
   	<tr>
   	<td><b>What is your pet name?</b></td>
@@ -179,11 +191,12 @@ width: 7em; height: 2em;}
   	</tr>
   
   	</table>
-  		<!--  <form method="post" onsubmit="return submitUserForm();">
+  		  <form method="post" onsubmit="return submitUserForm();">
     <div class="g-recaptcha" data-sitekey="6LenBKgUAAAAAKRebaqcUkOq1OeNL-4iaGrLfmRj" data-callback="verifyCaptcha"></div>
     <div id="g-recaptcha-error"></div>
-</form>-->
-<input type="submit" name="abcsubmit" value="submit" required/>
+    <input type="submit" name="abcsubmit" value="submit" required/>
+</form>
+
 	
  </form>
   	<script src='https://www.google.com/recaptcha/api.js'></script>
